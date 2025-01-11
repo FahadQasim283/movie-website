@@ -18,7 +18,7 @@ function getMovieInfo() {
     document.getElementById("movie-storyline").textContent = movie.overview;
     document.getElementById(
       "add-fav-btn"
-    ).href = `remove_fav.php?id=${movie.id}`;
+    ).href = `add_to_fav.php?id=${movie.id}`;
   } else {
     console.log("Movie ID is missing from the URL.");
   }
