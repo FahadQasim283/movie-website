@@ -102,7 +102,7 @@ Contributions are welcome! To contribute:
 
 ## 📄 License
 
-This project is Public no licese required. Make sure credit author by mentioning github while using this project.
+This project is Public no License required. Make sure credit author by mentioning github while using this project.
 
 ---
 
