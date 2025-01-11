@@ -1,4 +1,15 @@
 <?php
-include "db.php";
-$sql = "INSERT INTO `favourite_movies` (`id`) VALUES ('d6822b7b-48bb-4b78-ad5e-9ba04c517ec8')";
+require_once 'db.php';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $id = $conn->real_escape_string($_POST['id']);
+    $sql = "INSERT INTO `favourite_movies` (`id`) VALUES ('$id')";
+    if ($conn->query($sql) === TRUE) {
+        header("Location: index.php");
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
 ?>
+
+<!-- this code needs to be modified -->
