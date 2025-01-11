@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-CINEMA</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
@@ -169,6 +169,6 @@
         </div>
     </div>
 
-   <script type="module" src="script.js"></script>
+   <script type="module" src="script/script.js"></script>
 </body>
 </html>
