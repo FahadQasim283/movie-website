@@ -1,15 +1,14 @@
 <?php
 require_once 'db.php';
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $id = $conn->real_escape_string($_POST['id']);
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $id = $conn->real_escape_string($_GET['id']);
     $sql = "INSERT INTO `favourite_movies` (`id`) VALUES ('$id')";
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php");
-        exit();
+        echo json_encode(["success" => true]);
+        header('Location: index.php');
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo json_encode(["success" => false, "error" => $conn->error]);
+        header('Location: index.php');
     }
 }
 ?>
-
-<!-- this code needs to be modified -->

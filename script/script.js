@@ -35,10 +35,12 @@ function setupBanner() {
   const bannerElement = document.getElementById("movieBanner");
   bannerElement.innerHTML = "";
 
-  movies.slice(startingBannerIndex, endingBannerIndex).forEach((movie, index) => {
-    const bannerItem = createBannerItem(movie);
-    bannerElement.appendChild(bannerItem);
-  });
+  movies
+    .slice(startingBannerIndex, endingBannerIndex)
+    .forEach((movie, index) => {
+      const bannerItem = createBannerItem(movie);
+      bannerElement.appendChild(bannerItem);
+    });
   updateBannerPosition();
 }
 
@@ -126,9 +128,10 @@ function showMovieDetails(movieSelected) {
             <p><strong>Release Date:</strong> ${movie.released_on}</p>
             <p><strong>Cast:</strong> ${movie.cast.join(", ")}</p>
             <p><strong>Storyline:</strong> ${movie.overview}</p>
+            <a id="add-fav-btn" href="add_to_fav.php?id=${movie.id}"}">Add to Favorites
+            </a>
         </div>
     `;
-
   modal.style.display = "block";
 }
 

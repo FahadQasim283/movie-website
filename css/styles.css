@@ -3,6 +3,7 @@
   --background-color: #1a1a1a;
   --text-color: #ffffff;
   --button-bg: rgba(0, 0, 0, 0.5);
+  --button-green: rgba(50, 200, 9, 0.926);
   --gold-color: #ffd700;
 }
 
@@ -247,4 +248,12 @@ nav {
 .movie-details-info p {
   margin-bottom: 10px;
   line-height: 1.6;
+}
+#add-fav-btn{
+  text-decoration: none;
+  background-color: var(--button-bg);
+  color: var(--button-green);
+  padding: 10px;
+  border-radius: 20px;
+  float: right;
 }
