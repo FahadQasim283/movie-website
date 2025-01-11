@@ -44,7 +44,7 @@ cd movie-website
 $host = 'localhost';
 $username = 'your_username';
 $password = 'your_password';
-$database = 'movie_db';
+$database = 'ecinema';
 ```
 
 ### 5️⃣ Start the Server
@@ -98,7 +98,7 @@ Contributions are welcome! To contribute:
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
+This project is Public no licese required. Make sure credit author by mentioning github while using this project.
 
 ---
 
