@@ -3,6 +3,13 @@ const movieData = urlParams.get("movie");
 const movie = JSON.parse(movieData);
 
 if (movie) {
+    const body = document.body;
+    body.style.backgroundImage = `url(${movie.backdrop})`;
+    body.style.backgroundOpacity = .5;
+
+  document.getElementById("movie-title-heading").textContent = `${
+    movie.title
+  } (${new Date(movie.released_on).getFullYear()})`;
   document.getElementById("movie-poster").src = movie.poster;
   document.getElementById("movie-title").textContent = movie.title;
   document.getElementById("movie-rating").textContent =

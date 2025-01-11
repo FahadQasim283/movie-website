@@ -13,7 +13,6 @@
         <div class="logo">E-CINEMA</div>
         <div id="fav-movies"><a href="fav_movie_screen.php">Favourite Movies</a></div>
     </nav>
-
     <div class="banner-container">
         <div class="banner" id="movieBanner">
         </div>

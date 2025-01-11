@@ -51,14 +51,15 @@ nav {
   font-size: 2rem;
   color: #e50914;
 }
+
 .back a {
   text-align: center;
   text-decoration: none;
   font-size: 2rem;
   color: #e50914;
 }
-.fav-container{
-    margin: 20px;
+.fav-container {
+  margin: 20px;
 }
 
 .fav-movie-list {
