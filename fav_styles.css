@@ -1,0 +1,71 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fav-movie-screen {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fav-header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+.fav-movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.fav-movie-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.fav-movie-card:hover {
+    transform: scale(1.05);
+}
+
+.fav-movie-poster {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.fav-movie-info {
+    padding: 15px;
+}
+
+.fav-movie-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #e50914;
+}
+
+.fav-movie-rating,
+.fav-movie-genre,
+.fav-movie-time {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.fav-movie-rating span,
+.fav-movie-genre span,
+.fav-movie-time span {
+    font-weight: bold;
+    color: #ffffff;
+}
