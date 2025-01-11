@@ -16,7 +16,6 @@ function loadFavorites() {
         favoriteMoviesContainer.innerHTML = `<p>No favorite movies found.</p>`;
         return;
       }
-
       favoriteMovies.forEach((movie) => {
         const favMovieItem = document.createElement("div");
         favMovieItem.classList.add("fav-movie-card");
@@ -26,13 +25,13 @@ function loadFavorites() {
           }" alt="Movie Poster" class="fav-movie-poster">
           <div class="fav-movie-info">
             <h3 class="fav-movie-title">${movie.title}</h3>
-            <p class="fav-movie-rating">Rating: <span>${movie.rating}</span></p>
+            <p class="fav-movie-rating">Rating: ★ <span>${movie.imdb_rating.toFixed(
+              1
+            )}</span></p>
             <p class="fav-movie-genre">Genre: <span>${movie.genres.join(
               ", "
             )}</span></p>
-            <p class="fav-movie-time">Duration: <span>${
-              movie.duration
-            } min</span></p>
+            <p class="fav-movie-time">Duration: <span>${movie.length}</span></p>
           </div>
         `;
         favMovieItem.addEventListener("click", () => {

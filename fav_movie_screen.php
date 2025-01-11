@@ -9,8 +9,12 @@
 </head>
 
 <body>
+     <nav>
+         <div class="back"><a href="index.php">Back</a></div>
+         <div class="fav-header">Favorites</div>
+        <div class="logo">E-CINEMA</div>
+    </nav>
     <div class="fav-container">
-        <h1 class="fav-header">My Favorite Movies</h1>
         <div class="fav-movie-list" id="favorite-movies">
             <!-- Favorite movies will be dynamically loaded here -->
         </div>

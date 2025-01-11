@@ -16,7 +16,6 @@
 
     <div class="banner-container">
         <div class="banner" id="movieBanner">
-            <!-- Banner movies will be inserted here by JavaScript -->
         </div>
         <button class="banner-btn prev-btn">&lt;</button>
         <button class="banner-btn next-btn">&gt;</button>
