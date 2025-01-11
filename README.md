@@ -67,9 +67,13 @@ movie-website/
 │   └── style.css
 ├── images/
 │   └── movie-posters.jpg
-├── js/
+├── script/
 │   └── script.js
 ├── index.php
+├── remove_fav.php
+├── display_fav.php
+├── fav_movie_screen.php
+├── add_to_fav.php
 ├── db.php
 └── README.md
 ```
@@ -98,7 +102,7 @@ Contributions are welcome! To contribute:
 
 ## 📄 License
 
-This project is Public no licese required. Make sure credit author by mentioning github while using this project.
+This project is Public no License required. Make sure credit author by mentioning github while using this project.
 
 ---
 
