@@ -1,4 +1,3 @@
-
 # 🎬 Movie Website
 
 A dynamic movie website where users can browse a curated list of movies, view details, and manage their favorite selections.
@@ -64,18 +63,23 @@ http://localhost/movie-website/index.php
 ```bash
 movie-website/
 ├── css/
-│   └── style.css
+│   ├── fav_styles.css
+│   ├── show_details.css
+│   └── styles.css
 ├── images/
-│   └── movie-posters.jpg
 ├── script/
-│   └── script.js
+│   ├── data.js
+│   ├── fav_script.js
+│   ├── script.js
+│   └── show_details.js
 ├── index.php
-├── remove_fav.php
-├── display_fav.php
-├── fav_movie_screen.php
 ├── add_to_fav.php
 ├── db.php
-└── README.md
+├── fav_movie_screen.php
+├── get_fav.php
+├── movie_details.html
+├── README.md
+└── remove_fav.php
 ```
 
 ---
